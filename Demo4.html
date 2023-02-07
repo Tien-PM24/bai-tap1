@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: rgb(72, 197, 239);
+        }
+        h1{
+            text-align: center;
+            color: #63584c;
+            font-family: "Oswald", "Oswald", sans-serif;
+        }
+        #cd{
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+            font-family: "Oswald", "Oswald", sans-serif;
+        }
+        .img1{
+           margin-left: 10px;
+           
+        }
+        .text1{
+            position:absolute;
+            left: 60px;
+            font-family: "Oswald", "Oswald", sans-serif;
+            font-size: 15px;
+            color: #333;
+
+            
+        }
+        .gia1{
+            position: absolute;
+            left: 120px;
+            color: #0c0a09;
+        }
+        .img2{
+            position: absolute;
+            bottom: 450px;
+            left: 450px;
+            
+        }
+        .text2{
+            position: absolute;
+            left: 450px;
+            top:350px;
+            font-family: "Oswald", "Oswald", sans-serif;
+            font-size: 15px;
+            color: #333;
+        }
+        .gia2{
+            position: absolute;
+            right: 960px;
+            bottom:370px;
+            color: #d4651f;
+        }
+        .img3{
+            position: absolute;
+            bottom:450px;
+            left: 850px;
+            
+        }
+        .text3{
+            position: absolute;
+            bottom:390px;
+            left: 870px;
+            font-family: "Oswald", "Oswald", sans-serif;
+            font-size: 15px;
+            color: #333;
+        }
+        .gia3{
+            position:absolute;
+            bottom: 373px;
+            left: 970px;
+            color: #d4651f;
+        }
+        .img4{
+            position: absolute;
+            bottom: 450px;
+            left: 1250px;
+            margin-right: -50px;
+            
+        }
+        .text4{
+            position: absolute;
+            bottom:390px;
+            left: 1260px;
+            font-family: "Oswald", "Oswald", sans-serif;
+            font-size: 15px;
+            color: #333;
+        }
+        .gia4{
+            position:absolute;
+            bottom: 373px;
+            left: 1350px;
+            color: #d4651f;
+        }
+
+    </style>
+</head>
+    <body>
+        <h1>SẢN PHẨM CỦA CHÚNG TÔI</h1>
+        <P id="cd"> Đền 10 lần giá trị đơn hàng nếu không đúng da thật!</P>
+        <script>
+            var Thoitrang=[
+                Túi= {
+                    img:"<img class='img1'style='width:304px; height:228px;' src='https://meta.vn/Data/image/2022/09/05/tui-dung-laptop-stargo-absor-1.jpg'>",
+                    name:"<p class='text1'>Túi đựng Laptop BaackPack </p>",
+cost:"<p class='gia1'>400.000 <ins>đ</ins></p>"
+                },
+                Thắt_lưng={
+                    img:"<img class='img2'style='width:304px; height:228px;' src='https://laforce.vn/wp-content/uploads/2021/09/tang-day-nit-co-y-nghia-gi.jpg'>",
+                    name:"<p class='text2'>Thắt lưng quần jean mặt khóa xỏ kim DJ625-CF</p>",
+                    cost:"<p class='gia2'> 180.000 <ins>đ</ins> </p>"
+                },
+                Ví={
+                    img:"<img class='img3'style='width:304px; height:228px;' src='https://cf.shopee.vn/file/bf589847820095cc648f5df5bc3c3099'>",
+                    name:"<p class='text3'>Ví nam dạng ngang cổ điển VNTAN-31N</p> ",
+                    cost:"<p class='gia3'>430.000 <ins>đ</ins></p>"
+                },
+                Giày={
+                    img:"<img class='img4' style='width:304px; height:228px;' src='https://cf.shopee.vn/file/77bbcfb1b6f4ab0d2a41290a081ce5fc'>",
+                    name:"<p class='text4'>Giày tây nam buộc dây vân da GNTA26895-N</p> ",
+                    cost:"<p class='gia4'>900.000 <ins>đ </ins> <del> 1.600.000</del></p>"
+                }
+            ]
+
+            for(var i=0;i<Thoitrang.length;i++){
+                document.write(Thoitrang[i].img+"<br>")
+                document.write(Thoitrang[i].name+"<br>")
+                document.write(Thoitrang[i].cost)
+                document.write("<div style='clear:both'></div>")
+            }
+    </script>
+</body>
+</html>
